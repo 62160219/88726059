@@ -9,9 +9,77 @@
  <h3>Hotel Booking</h3>
  <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
  <table>
+
  <tr>
-     <td><label for="name">Room Type</label></td>
+     <td><label for="name">Room Type:</label></td>
+     <td><select name="roomtype">
+         <option value="0">--Please Select--</option>
+         <option value="1">--Standard--</option>
+         <option value="2">--Luxury--</option>
+         <option value="3">--Deluxe--</option>
+     </td>
  </tr>
+
+ <tr>
+     <td><label for="Number">Number of Guests:</label></td>
+     <td><select name="numguest">
+        <option value="0">--Please Select--</option>
+         <option value="1">1-2</option>
+         <option value="2">3-4</option>
+         <option value="3">5-6</option>
+         <option value="4">7-8</option>
+     </td>
+ </tr>
+
+ <tr>
+     <td><label for="name">Name:</label></td>
+     <td><input type="text" name="name" id="name" value="First">&emsp;
+        <input type="text" name="lname" id="lname" value="last">
+     </td>
+ </tr>
+
+<tr>
+    <td><label for="email">Email:</label></td>
+    <td><input type="text" name="email" id="email"value="john@company.com">
+    </td>
+</tr>
+
+<tr>
+    <td><label for="start">Arrival:</label></td>
+    <td>
+        <input type="date" id="start" name="arrivaldate">&emsp;&emsp;&emsp;
+        <input type="time" id="start" name="arrivaltime">
+    </td>
+</tr>
+
+<tr>
+    <td><label for="date&time">Departure:</label></td>
+    <td>
+        <input type="date" id="start" name="departuredate">&emsp;&emsp;&emsp;
+        <input type="time" id="start" name="departuredate">
+    </td>
+</tr>
+
+<tr>
+    <td><label for="car">Free Pickup:</label></td>
+    <td>
+        <input type="radio" name="pick" id="pick" value="Yes"> Yes sure!<br>
+        <input type="radio" name="pick" id="pick" value="No"> No, I already rented a car.
+    </td>
+</tr>
+
+<tr>
+    <td><label for="Other requests">Other requests:</label></td>
+    <td><Textarea name="ptherreq" id="ptherreq" rows="5" cols="50"></Textarea></td>
+</tr>
+
+<tr>
+    <td colspan="2">
+        <center>
+            <input type="submit" value="Complete Reservation">
+        </center>
+    </td>
+</tr>
  
  </form>
 </table>
