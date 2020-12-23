@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function summary(){
+          sum = document.getElementById('sum').innerHTML=""
+          x = document.getElementById('n');
+          y = document.getElementById('m');
+          sum = document.getElementById('sum');
+          sumall = document.getElementById('sumall');
+          var t = 0;
+          
+    for ( let i = parseInt(x.value);i<=parseInt(y.value);i++) {
+        t = t+i;
+        sumall.innerHTML=t
+
+        sum.innerHTML +=i
+        if(i<parseInt(y.value)){
+            
+            sum.innerHTML += "+"
+        }
+        if(i==parseInt(y.value)){
+            sum.innerHTML += "="
+        }
+     
+        
+        
+        
+    }
+    
+}
+</script>
+<style>
+    a{
+       color: rgb(27, 160, 165);
+       font-size: 30px;
+       font-family: arial;
+    }
+    a:hover{
+        color: rgb(73, 35, 211);
+    }
+    b{
+        color: rgb(80, 228, 104);
+        width: 3000px;
+        font-size: 20px;
+        font-family: arial;
+    }
+    body{
+        background-color: rgb(204, 230, 92);
+        font-family: arial;
+    }
+    
+
+</style>
+</head>
+<body>
+            <input type="text" placeholder="ใส่ตัวเลข" id="n"> -  
+            <input type="text" placeholder="ใส่ตัวเลข" id="m">
+            <button onclick="summary()">คำนวน</button>
+            <div id="sum"></div>
+            <div id="sumall"></div>
+            
+</body>
+</html>
+
+           

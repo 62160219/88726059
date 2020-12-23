@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Multi</title>
+        <h2>โปรแกรมสูตรคูณ</h2>
+    <script>
+        function multi(n) {
+            div = document.getElementById('disp')
+            div.innerHTML = ''
+            table = ``
+
+            for (i = 1; i <= 12; i++) {
+                table += `<tr>
+                            <td>${n} x ${i} = </td>
+                            <td>${n*i}</td>
+                        </tr>`
+                
+        }
+        div.innerHTML = table
+    }
+    
+    </script>
+    <style>
+        a{
+           color: rgb(134, 121, 60);
+           font-size: 30px;
+           font-family: arial;
+        }
+        a:hover{
+            color: rgb(132, 41, 168);
+        }
+        b{
+            color: rgb(77, 87, 184);
+            width: 3000px;
+            font-size: 20px;
+            font-family: arial;
+        }
+        body{
+            background-color: rgb(224, 220, 178);
+            font-family: arial;
+        }
+        
+    
+    </style>
+    </head>
+    <body align=center>
+        <input type="text" placeholder="โปรดใส่แม่สูตรคูณที่ต้องการ" onkeyup="multi(this.value);">
+        <table border="1" align=center>
+        <tbody id="disp">
+    
+        </tbody>
+        </table>
+    </body>
+    
+</html>

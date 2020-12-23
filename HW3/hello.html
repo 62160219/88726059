@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>พิมพ์คำทักทายในช่องว่าง</p>
+
+<input type="text" id="myInput" oninput="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = "คุณ : " + x;
+}
+</script>
+</body>
+<style>
+    a{
+       color: rgb(27, 160, 165);
+       font-size: 30px;
+       font-family: arial;
+    }
+    a:hover{
+        color: rgb(73, 35, 211);
+    }
+    b{
+        color: rgb(80, 228, 104);
+        width: 3000px;
+        font-size: 20px;
+        font-family: arial;
+    }
+    body{
+        background-color: rgb(128, 210, 235);
+        font-family: arial;
+    }
+    
+
+</style>
+</html>
+
+  
